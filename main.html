@@ -3,14 +3,48 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+   <form method="POST">
+    <label>Name*</label>
+    <input type="text" id="name" required="yes"><br><br>
 
+    <label>Email*</label>
+    <input type="email" id="email" required="yes"><br><br>
+
+    <label>Gender*</label>
+    <input type="radio" id="male" name="gender" value="Male" required="yes">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="Female" required="yes">
+    <label for="female">Female</label><br><br>
+
+    <label  for="brands">Laptop Brands</label>
+    <select id="laptop" name="laptop">
+        <option id="">Select a Laptop</option>
+        <option id="apple">Apple</option>
+        <option id="asus">Asus</option>
+        <option id="hp">HP</option>
+    </select><br><br>
+
+    <label>Age*</label>
+    <input type="number" id="number" required="yes" ><br><br>
+
+    <label>Date of Birth*</label>
+    <input type="date" id="dob" required="yes"><br><br>
+
+    <label>Password*</label>
+    <input type="password" id="password" required="yes"><br><br>
+
+    <label>Portfolio URL</label>
+    <input type="url" id="portfolio" name="portfolio" placeholder="https://yourportfolio.com"><br><br>
+
+    <button type="submit">Submit</button>
+
+   </form> 
 </body>
 
 </html>
